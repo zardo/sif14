@@ -151,6 +151,19 @@
     </div>
     </div>
 
+    <div class="container about">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h3>O Simpósio Interdisciplinar Farroupilha</h3>
+                <div class="paragraph" style="text-align:justify;"><br><span></span>O Simpósio Interdisciplinar Farroupilha (SIF) apresenta-se como a materialização de todos os valores construídos pela rede internacional Estudantes Pela Liberdade para a comunidade do Rio Grande do Sul.&nbsp;<br><br>O evento busca apresentar uma visão interdisciplinar das principais áreas das Ciências Humanas (Economia, Administração, Direito, Relações Internacionais e Ciência Política), de forma a prover a seus espectadores e participantes uma integração entre as áreas baseada no mercado de trabalho e nas principais discussões que envolvem a atual situação brasileira.<br><br>Dessa forma, o SIF pretende trabalhar com o binômio de projetos pessoais e visões sociais. Assim sendo, o evento é desenhado de forma a possibilitar que os participantes possam adquirir conhecimento interdisciplinar contribuindo às suas carreiras profissionais (projetos pessoais), da mesma maneira que se mantém inteirados das macro questões que colocam o Brasil na situação em que se encontra frente ao cenário internacional (visões sociais).<br><br>O Simpósio será composto de um corpo de contribuidores selecionados pelo Clube Farroupilha com o foco dicotômico de sucesso e experiência. Esses contribuidores serão convidados de todo o país para virem ao coração do Rio Grande discutir os principais pontos.<br><br>Frente ao "mercado de eventos" do Rio Grande Sul, o SIF se insere como uma&nbsp;proposta nova, tanto pela metodologia adotada (interdisciplinaridade), como também pela visão voltada à realidade e práticas atuais, valores que norteiam a rede internacional Estudantes Pela Liberdade.<br><span></span></div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                <h3>O Clube Farroupilha</h3>
+                <div class="paragraph" style="text-align:justify;">O <a href="http://clubefarroupilha.com/" target="_blank">Clube Farroupilha</a> é o&nbsp;<em>chapter</em>&nbsp;local do SFL/EPL. Fundado em outubro de 2013, por um grupo de 10 estudantes de diversas áreas de conhecimento, hoje conta com mais de 150 membros, de diversos cursos. Além do crescimento expressivo, nesse curto período de tempo o Farroupilha organizou 8 eventos – muitos deles com nomes relevantes a nível nacional e internacional – que contaram com a participação de mais de 800 pessoas.<br><br>O Clube produz também em base quase que diária textos que apresentam um ponto de vista liberal em relação à política, economia, negócios e sociedade. Atualmente, contamos com mais de 1.400 seguidores em nossa página institucional no Facebook, interagindo tanto nesse meio quanto por nosso site.<br><span></span><br><span></span></div>
+            </div>
+        </div>
+    </div>
+
     <div class="map">
         <div id="map-canvas"></div>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUVHqxFLeogqX-HdnGA216sfNpgUv4HvU"></script>
