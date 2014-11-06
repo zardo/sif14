@@ -1,0 +1,23 @@
+{
+  "name": "SIF 2014",
+  "version": "1.0",
+  "authors": [
+    "Lucas Zardo <lucas@zar.do>"
+  ],
+  "description": "Simpósio Interdisciplinar Farroupilha",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.0",
+    "bootswatch": "~3.3.0",
+    "fontawesome": "~4.2.0"
+  }
+}
