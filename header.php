@@ -34,7 +34,7 @@
             </div>
             <div class="row text-center markers">
                 <div class="col-xs-12 col-sm-4"><i class="fa fa-map-marker"></i>Santa Maria, RS</div>
-                <div class="col-xs-12 col-sm-4"><i class="fa fa-calendar"></i>21 e 22 de outubro</div>
+                <div class="col-xs-12 col-sm-4"><i class="fa fa-calendar"></i>21 e 22 de novembro</div>
                 <div class="col-xs-12 col-sm-4"><i class="fa fa-microphone"></i>7 Palestrantes</div>
             </div>
             <div class="row text-center info">
