@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                     './bower_components/jquery/dist/jquery.min.js',
                     './bower_components/bootstrap/dist/js/bootstrap.js'
                 ],
-                dest: './public/assets/javascript/panel.js'
+                dest: './sif.js'
             }
         },
 

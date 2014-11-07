@@ -46,13 +46,13 @@
             <div class="row text-center links">
                 <div class="col-xs-12">
                     <a href="http://www.eventick.com.br/sif14" target="_blank" class="btn btn-primary btn-lg">Inscreva-se</a>
-                    <a href="#" class="btn btn-default btn-lg">Saiba mais</a>
+                    <a href="#palestrantes" class="btn btn-default btn-lg">Conheça os palestrantes</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="container speakers">
+    <div class="container speakers" id="palestrantes">
         <div class="row">
             <div class="col-xs-12 text-center">
                 <h1>Palestrantes</h1>
@@ -60,7 +60,7 @@
 
             <?php $args = array('post_type' => 'palestrante', 'posts_per_page' => 10); $loop = new WP_Query($args); while ($loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="col-xs-12 col-sm-6 col-sm-4 col-lg-3">
-                    <a href="" class="speaker text-center">
+                    <a href="" class="speaker text-center" data-placement="top" data-html="true" data-trigger="hover" data-toggle="popover" title="<?php the_title() ?>" data-content="<?php the_content() ?>">
                         <?php if (has_post_thumbnail( $post->ID ) ): ?>
                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
                             <img src="<?= $image[0] ?>" class="img-responsive"/>
@@ -70,10 +70,16 @@
                 </div>
             <?php endwhile; ?>
         </div>
+        <div class="row text-center links">
+            <div class="col-xs-12">
+                <a href="http://www.eventick.com.br/sif14" target="_blank" class="btn btn-primary btn-lg">Inscreva-se</a>
+                <a href="#programacao" class="btn btn-default btn-lg">Veja a programação</a>
+            </div>
+        </div>
     </div>
 
     <div class="bg-gray">
-    <div class="container schedule">
+    <div class="container schedule" id="programacao">
         <div class="row">
             <div class="col-xs-12 text-center">
                 <h1>Programação</h1>
@@ -148,10 +154,16 @@
                 </div>
             </div>
         </div>
+        <div class="row text-center links">
+            <div class="col-xs-12">
+                <a href="http://www.eventick.com.br/sif14" target="_blank" class="btn btn-primary btn-lg">Inscreva-se</a>
+                <a href="#o-sif" class="btn btn-default btn-lg">Saiba mais sobre o SIF</a>
+            </div>
+        </div>
     </div>
     </div>
 
-    <div class="container about">
+    <div class="container about" id="o-sif">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <h3>O Simpósio Interdisciplinar Farroupilha</h3>
