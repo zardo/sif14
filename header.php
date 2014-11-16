@@ -60,8 +60,10 @@
             <div class="col-xs-12 text-center">
                 <h1>Palestrantes</h1>
             </div>
+        </div>
 
-            <?php $args = array('post_type' => 'palestrante', 'posts_per_page' => 10); $loop = new WP_Query($args); while ($loop->have_posts() ) : $loop->the_post(); ?>
+        <div class="row">
+            <?php $a=1; $args = array('post_type' => 'palestrante', 'posts_per_page' => 10); $loop = new WP_Query($args); while ($loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="col-xs-12 col-sm-6 col-sm-4 col-lg-3">
                     <a class="speaker text-center">
                         <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -72,7 +74,8 @@
                         <p><?php the_content() ?></p>
                     </a>
                 </div>
-            <?php endwhile; ?>
+                <?php if($a%4==0): ?></div><div class="row"><?php endif; ?>
+            <?php $a++; endwhile; ?>
         </div>
         <div class="row text-center links">
             <div class="col-xs-12">
