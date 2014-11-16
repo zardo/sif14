@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="<?= get_stylesheet_directory_uri() ?>/sif.css" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/28524b29c680aa483b69877b31066aed?s=16" sizes="16x16" />
+    <link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/28524b29c680aa483b69877b31066aed?s=16" sizes="16x16" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -60,12 +63,13 @@
 
             <?php $args = array('post_type' => 'palestrante', 'posts_per_page' => 10); $loop = new WP_Query($args); while ($loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="col-xs-12 col-sm-6 col-sm-4 col-lg-3">
-                    <a href="" class="speaker text-center" data-placement="top" data-html="true" data-trigger="hover" data-toggle="popover" title="<?php the_title() ?>" data-content="<?php the_content() ?>">
+                    <a class="speaker text-center">
                         <?php if (has_post_thumbnail( $post->ID ) ): ?>
                             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
                             <img src="<?= $image[0] ?>" class="img-responsive"/>
                         <?php endif; ?>
                         <h2><?php the_title() ?></h2>
+                        <p><?php the_content() ?></p>
                     </a>
                 </div>
             <?php endwhile; ?>
@@ -174,6 +178,82 @@
                 <div class="paragraph" style="text-align:justify;">O <a href="http://clubefarroupilha.com/" target="_blank">Clube Farroupilha</a> é o&nbsp;<em>chapter</em>&nbsp;local do SFL/EPL. Fundado em outubro de 2013, por um grupo de 10 estudantes de diversas áreas de conhecimento, hoje conta com mais de 150 membros, de diversos cursos. Além do crescimento expressivo, nesse curto período de tempo o Farroupilha organizou 8 eventos – muitos deles com nomes relevantes a nível nacional e internacional – que contaram com a participação de mais de 800 pessoas.<br><br>O Clube produz também em base quase que diária textos que apresentam um ponto de vista liberal em relação à política, economia, negócios e sociedade. Atualmente, contamos com mais de 1.400 seguidores em nossa página institucional no Facebook, interagindo tanto nesse meio quanto por nosso site.<br><span></span><br><span></span></div>
             </div>
         </div>
+        <div class="row text-center links">
+            <div class="col-xs-12">
+                <a href="http://www.eventick.com.br/sif14" target="_blank" class="btn btn-primary btn-lg">Inscreva-se</a>
+                <a href="#patrocinadores" class="btn btn-default btn-lg">Conheça os patrocinadores do SIF</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray">
+    <div class="container sponsors" id="patrocinadores">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h1>Patrocinadores</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <a href="http://epl.org.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor1.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://ammm.adv.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor2.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://ammm.adv.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor3.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://clinicaviversm.com.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor4.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://www.contegseguros.com.br/home.php" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor5.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://www.cdlsm.com.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor6.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://www.dachery.com.br/site/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor7.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://www.moinhosantamaria.com.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor8.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://www.construtorajobim.com.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor9.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a target="_blank"><img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor10.png" class="img-responsive"/></a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="http://www.uglione.com.br/" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor11.png" class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <a href="https://www.facebook.com/pages/Digigraf-Express/1412181652339093" target="_blank">
+                    <img src="<?= get_stylesheet_directory_uri() ?>/images/sponsor12.png" class="img-responsive"/>
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
 
     <div class="map">

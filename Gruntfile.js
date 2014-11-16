@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         'cache-busting': {
             css: {
                 replace: ['header.php'],
-                replacement: 'panel.css',
+                replacement: 'sif.css',
                 file: 'sif.css',
                 cleanup: true
             }

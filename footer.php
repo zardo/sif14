@@ -17,8 +17,6 @@
             }
           });
 
-          $('.speakers .speaker').popover({});
-
         });
 
     </script>
